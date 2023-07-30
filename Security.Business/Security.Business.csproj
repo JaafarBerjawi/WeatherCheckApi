@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Common.Business\Common.Business.csproj" />
+	  <ProjectReference Include="..\Common.Entities\Common.Entities.csproj" />
+	  <ProjectReference Include="..\Data.EFCore\Data.EFCore.csproj" />
+	  <ProjectReference Include="..\Security.Data\Security.Data.csproj" />
+	  <ProjectReference Include="..\Security.Entities\Security.Entities.csproj" />
+	</ItemGroup>
+</Project>
